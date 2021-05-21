@@ -208,6 +208,9 @@ img{
     justify-content: center;
     align-items: center;
     z-index: 55;
+    opacity:0;
+    visibility: hidden;
+    transition: all 0.5 ease;
 
 }
 .video-popup-inner{
@@ -233,4 +236,9 @@ img{
     color: var(--color-1);
     font-size: 30px;
     cursor: pointer;
+}
+
+.video-popup .open{
+    opacity: 1;
+    visibility: hidden;
 }
