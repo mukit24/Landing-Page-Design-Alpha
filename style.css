@@ -112,6 +112,7 @@ img{
     padding: 150px 0px;
     background-color: var(--main-color);
     border-radius: 0 0 200px 0;
+    position: relative;
 }
 .home-img img{
     max-width: 250px;
@@ -227,6 +228,7 @@ img{
     left: 0;
     width: 100%;
     height: 100%;
+    border: 0;
 }
 
 .video-popup .close{
@@ -238,7 +240,36 @@ img{
     cursor: pointer;
 }
 
-.video-popup .open{
+.open-popup{
     opacity: 1;
-    visibility: hidden;
+    visibility: visible;
+}
+
+/* effect wrap */
+.effect-wrap .effect{
+    position: absolute;
+}
+
+.effect-wrap .effect-1{
+    left: 20%;
+    top: 20%;
+    color: yellowgreen;
+    animation: spin_1 3s linear infinite;
+    font-size: 20px;
+}
+
+.effect-wrap .effect-2{
+    right: 8%;
+    top: 20%;
+    color: rgb(188, 199, 166);
+    animation: spin_1 3s linear infinite;
+    font-size: 22px;
+}
+
+.effect-wrap .effect-3{
+    left: 50%;
+    top: 25%;
+    color: rgb(202, 187, 103);
+    animation: spin_1 2s linear infinite;
+    font-size: 22px;
 }
