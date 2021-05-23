@@ -61,6 +61,13 @@ img{
 
 .navbar{
     background-color: var(--main-color);
+    transition: all .5s ease;
+}
+
+.navbar-shrink{
+    box-shadow: 0 10px 10px rgba(0,0,0,.1);
+    background-color: var(--main-color); 
+    padding: 10px 0px;
 }
 
 .navbar-brand{
@@ -272,4 +279,17 @@ img{
     color: rgb(202, 187, 103);
     animation: spin_1 2s linear infinite;
     font-size: 22px;
+}
+
+/* feature section */
+.feature-title h2{
+    text-align: center;
+    font-size: 35px;
+    font-family: var(--font-1);
+    text-transform: capitalize;
+    font-weight: bold;
+}
+
+.feature-title h2 span{
+    color: var(--main-color);
 }

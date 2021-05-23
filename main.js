@@ -1,6 +1,14 @@
 $(document).ready(function () {
-    const videoSrc = $('#player-1').attr('src');
 
+    $(window).on('scroll',function(){
+        if($(this).scrollTop()>90){
+            $('.navbar').addClass('navbar-shrink');
+        }else{
+            $('.navbar').removeClass('navbar-shrink');
+        }
+    })
+
+    const videoSrc = $('#player-1').attr('src');
     $(".play-video,#close-popup").click(function () { 
         if ($('.video-popup').hasClass('open-popup')){
             $('.video-popup').removeClass('open-popup');
